@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 
 import '../css/home.css';
 
-import Home_Image from '../img/home_image.jpg';
+import Home_Image from '../img/h_bg1.png';
 
 const Home = () => {
     const [currentIndex, setCurrentIndex] = useState(0);

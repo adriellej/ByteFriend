@@ -1,22 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Paytone+One&family=Readex+Pro:wght@160..700&display=swap');
 
-/* Main content */
 .home_container {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
-  gap: 25px;
   font-family: 'Readex Pro', sans-serif;
 }
 
-.column_2 .home_image {
-  width: 580px;
-  height: auto;
-}
-
 .column_1 {
-  padding: 35px 0;
+  flex: 1; /* Make column 1 flexible to occupy remaining space */
+  padding: 35px;
 }
 
 .column_1 span {
@@ -37,7 +31,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 35px; /* Add gap between buttons */
+  gap: 35px;
 }
 
 .column_1 button {
@@ -56,6 +50,23 @@
 .buttons .button_outline {
   border: 2px solid #05CC64; 
   background-color: transparent;
+}
+
+.column_2 {
+  flex: 1; /* Make column 2 flexible to occupy remaining space */
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.column_2 .home_image {
+  position: absolute;
+  top: 0;
+  left: -50px;
+  width: 620px; /* Set image width to cover half of the device width */
+  height: auto;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
 }
 
 /* Transition for the titles */
