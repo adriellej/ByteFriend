@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(./img/background1.png);
+}
+
+.pages {
+  padding: 25px 55px;
+}
+
