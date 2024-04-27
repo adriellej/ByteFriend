@@ -1,7 +1,7 @@
 // import React from "react";
 
 import "../css/navbar.css";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom"; // Change import to NavLink
 import Logo from "../img/logo.png";
 
 const Navbar = () => {
@@ -16,19 +16,19 @@ const Navbar = () => {
                 <div className="nav_list">
                     <ul>
                         <li>
-                            <Link to="/">Home</Link>
+                            <NavLink exact to="/" activeClassName="active">Home</NavLink> {/* Use NavLink instead of Link */}
                         </li>
 
                         <li>
-                            <Link to="/aboutUs">About Us</Link>
+                            <NavLink to="/aboutUs" activeClassName="active">About Us</NavLink> {/* Use NavLink instead of Link */}
                         </li>
 
                         <li>
-                            <Link to="/services">Services</Link>
+                            <NavLink to="/services" activeClassName="active">Services</NavLink> {/* Use NavLink instead of Link */}
                         </li>
 
                         <li>
-                            <Link to="/contact">Contact</Link>
+                            <NavLink to="/contact" activeClassName="active">Contact</NavLink> {/* Use NavLink instead of Link */}
                         </li>
                     </ul>
                 </div>
