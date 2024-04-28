@@ -8,33 +8,33 @@
   font-family: 'Readex Pro', sans-serif;
 }
 
-.column_1 {
+.home_container .column_1 {
   flex: 1; 
 /*  padding: 35px; */
 }
 
-.column_1 span {
+ .home_container .column_1 span {
   padding: 5px 15px;
   background-color: #FCA4E0;
   border-radius: 15px;
   border: none;
 }
 
-.column_1 h1 {
+ .home_container .column_1 h1 {
   font-family: 'Paytone One';
   font-size: 65px; 
   line-height: 1.2; 
   margin: 0; 
 }
 
-.column_1 .buttons {
+.home_container .column_1 .buttons {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 35px;
 }
 
-.column_1 button {
+.home_container .column_1 button {
   padding: 7px 20px;
   border-radius: 15px;
   width: 125px;
@@ -52,14 +52,14 @@
   background-color: transparent;
 }
 
-.column_2 {
+.home_container .column_2 {
   flex: 1; 
   position: relative;
   display: flex;
   justify-content: flex-start;
 }
 
-.column_2 .home_image {
+.home_container .column_2 .home_image {
   position: absolute;
   top: 0;
   left: 0px;

@@ -6,10 +6,15 @@
 .about_container {
 	font-family: "Readex Pro", sans-serif;
 }
-.about_container h1{
+
+.header_container h1{
 	font-family: "Paytone One";
-	font-size: 42px;
+	font-size: 46px;
 	margin: 0;
+}
+
+.header_container p {
+	margin-top: 35px;
 }
 
 .header_container {
@@ -18,10 +23,54 @@
 	align-items: center;
 }
 
+.header_container .column_1 {
+	width: 600px;
+	position: relative;
+}
+
+.header_container .column_2 img {
+	width: 755px;
+	position: absolute;
+	top: 30px;
+	right: 150px;
+	z-index: -1;
+	opacity: 0.8;
+}
+
+/* Avatar */
 .avatar_container img {
 	width: 75px;
 	height: auto;
 }
+
+/*
+<div className="avatar_container">
+					<img src={Avatar_1} alt="avatar" />
+					<img src={Avatar_2} alt="avatar" />
+					<img src={Avatar_3} alt="avatar" />
+					<img src={Avatar_4} alt="avatar" />
+				</div>
+*/
+
+/* Origin name */
+.origin_name {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 25px;
+	margin-top: 50px;
+}
+
+.origin_name div {
+	text-align: center;
+	width: 245px;
+}
+
+.origin_name h2 {
+	font-size: 42px;
+	font-family: "Paytone One";
+}
+
 
 /* Skills set style */
 .skills_container {
@@ -29,6 +78,7 @@
 	justify-content: flex-start;
 	align-items: flex-start;
 	gap: 25px;
+	margin-top: 50px;
 }
 
 .skills_description {
@@ -53,6 +103,7 @@
 	background-color: rgba(244,244,244, 0.22);
 	padding: 5px 15px;
 	border-radius: 15px;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 .skills_description h2, .skill_specific h3 {
@@ -63,7 +114,7 @@
 }
 
 .skills_description h2 {
-	font-size: 32px;
+	font-size: 30px;
 }
 
 .skills_description p {

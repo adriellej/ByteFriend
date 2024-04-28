@@ -2,6 +2,7 @@ import "../index.css";
 import "../css/aboutUs.css";
 
 // Import images
+import Team_Image from "../img/team.png";
 import Avatar_1 from "../img/avatar1.png";
 import Avatar_2 from "../img/avatar2.png";
 import Avatar_3 from "../img/avatar3.png";
@@ -11,20 +12,43 @@ const AboutUs = () => {
 	return (
 		<div className="about_container">
 			<div className="header_container"> 
-				<div>
+				<div className="column_1">
 					<h1>About Us.</h1>
+
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+						sed do eiusmod tempor incididunt ut labore et dolore magna 
+						aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+						ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+						Duis aute irure dolor in reprehenderit in voluptate velit 
+						esse cillum dolore eu fugiat nulla pariatur. 
+					</p>
+
+				</div>
+
+				<div className="column_2">
+					<img src={Team_Image} alt="team_image" />
 				</div>
 				
-				<div className="avatar_container">
-					<img src={Avatar_1} alt="avatar" />
-					<img src={Avatar_2} alt="avatar" />
-					<img src={Avatar_3} alt="avatar" />
-					<img src={Avatar_4} alt="avatar" />
+			</div>
+
+			<div className="origin_name">
+				<div>
+					<h2>byte</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit
+					</p>
+				</div>
+
+				<span>
+					<h2>+</h2>
+				</span>
+
+				<div>
+					<h2>friend</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit
+					</p>
 				</div>
 			</div>
 
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-			</p>
 
 			<div className="skills_container">
 				<div className="skills_description">
