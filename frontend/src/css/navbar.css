@@ -2,14 +2,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Paytone+One&family=Readex+Pro:wght@160..700&display=swap');
 
 .navigation {
-  background-color: #05CC64; 
-  color: #000000; 
+  position: fixed;
+  top: 0; /* Position the navigation bar at the top of the viewport */
+  width: 100%; /* Make the navigation bar span the entire width of the viewport */
+  background-color: #05CC64;
+  color: #000000;
   padding: 5px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-family: 'Readex Pro', sans-serif;
+/*  z-index: 1000; /*/
 }
+
 
 /* Left Side */
 .logo_container {

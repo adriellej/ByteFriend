@@ -9,4 +9,64 @@
 .about_container h1{
 	font-family: "Paytone One";
 	font-size: 42px;
+	margin: 0;
 }
+
+.header_container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.avatar_container img {
+	width: 75px;
+	height: auto;
+}
+
+/* Skills set style */
+.skills_container {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	gap: 25px;
+}
+
+.skills_description {
+	width: 350px;
+	text-align: right;
+}
+
+.skills_list {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	gap: 25px;
+	flex: 1;
+}
+
+.skill_specific {
+	width: 100%;
+}
+
+.skills_description, .skill_specific {
+	background-color: rgba(244,244,244, 0.22);
+	padding: 5px 15px;
+	border-radius: 15px;
+}
+
+.skills_description h2, .skill_specific h3 {
+	text-transform: uppercase;
+	font-family: "Paytone One";
+	border-bottom: 3px solid #FBCA04;
+	padding-bottom: 5px;
+}
+
+.skills_description h2 {
+	font-size: 32px;
+}
+
+.skills_description p {
+	font-size: 22px;
+}
+

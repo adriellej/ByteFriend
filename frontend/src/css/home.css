@@ -9,8 +9,8 @@
 }
 
 .column_1 {
-  flex: 1; /* Make column 1 flexible to occupy remaining space */
-  padding: 35px;
+  flex: 1; 
+/*  padding: 35px; */
 }
 
 .column_1 span {
@@ -53,7 +53,7 @@
 }
 
 .column_2 {
-  flex: 1; /* Make column 2 flexible to occupy remaining space */
+  flex: 1; 
   position: relative;
   display: flex;
   justify-content: flex-start;
@@ -62,8 +62,8 @@
 .column_2 .home_image {
   position: absolute;
   top: 0;
-  left: -50px;
-  width: 620px; /* Set image width to cover half of the device width */
+  left: 0px;
+  width: 620px;
   height: auto;
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
